@@ -10,7 +10,7 @@ class ApiController {
       let results = this.capitalizeWords(sort);
       res.send(results);
     } else {
-      res.send("Query param not match");
+      res.send({ status: 404, message: "Query param not match!" });
     }
   };
   capitalizeWords = (arr: any[]) => {
