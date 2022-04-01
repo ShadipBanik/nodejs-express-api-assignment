@@ -1,6 +1,6 @@
 import express from "express";
 import http from "http";
-import { router as apiRoutes } from "./routes/api.router";
+import { router as apiRoutes } from "./routes/api.route";
 const app = express();
 const port = 3000;
 const server = http.createServer(app);
